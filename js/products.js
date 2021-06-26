@@ -8,7 +8,7 @@ function loadProducts(options) {
     let water = options.water.getAttribute("data-value");
     let pets = options.pets.getAttribute("data-value");
 
-    const url = `http://front-br-challenges.web.app/api/v2/green-thumb/?sun=${sun}&water=${water}&pets=${pets}`
+    const url = `https://front-br-challenges.web.app/api/v2/green-thumb/?sun=${sun}&water=${water}&pets=${pets}`
 
     fetch(url)
         .then(response => response.json())
