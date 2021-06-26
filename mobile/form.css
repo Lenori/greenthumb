@@ -1,0 +1,38 @@
+@media screen and (max-width: 1650px) {
+    .form-element p {
+        width: 80%;
+    }
+
+    .form-select {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    .form-element {
+        align-items: center;
+    }
+
+    .form-element p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .form-element {
+        width: 100%;
+        margin: 0 0 40px 0;
+    }
+
+    .form-element p {
+        width: 80%;
+    }
+
+    .form-select {
+        width: 100%;
+    }
+}

@@ -1,2 +1,163 @@
-<h1>teste</h1>
-<h2>teste</h2>
+<html>
+    <head>
+
+        <title>Greenthumb | Leo Lenori</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./styles.css">
+
+        <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet" href="./styles/form.css">
+        <link rel="stylesheet" href="./styles/products.css">
+
+        <link rel="stylesheet" href="./mobile/header.css">
+        <link rel="stylesheet" href="./mobile/form.css">
+        <link rel="stylesheet" href="./mobile/products.css">
+    </head>
+
+    <body>
+        <div class="header">  
+            <div class="container header-container">
+                <img class="header-logo" src="assets/icons/logo-white.svg" alt="logo" />
+
+                <h1>Find your next green friend</h1>
+
+                <img src="assets/icons/arrow-down.svg" alt="arrow-down" />
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="form-container">
+                
+                <div class="form-element">
+                    <img src="assets/illustrations/sun.png" alt="dog" />
+
+                    <p>
+                        <span>1. </span>
+                        Set the amount of <span>sunlight</span> your plant will get.
+                    </p>
+
+                    <div id="select-sun" class="form-select">
+                        <div onclick="controlOptions('sun', 'open')" class="form-select-header">
+                            <p id='select-header-sun'>Select...</p>
+                            
+                            <img id="form-select-arrow-sun" src="assets/icons/chev-down.png" alt="arrow" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <img src="assets/illustrations/wateringcan.png" alt="dog" />
+
+                    <p>
+                        <span>2. </span>
+                        How often do you want to <span>water</span> your plant?
+                    </p>
+
+                    <div id="select-water" class="form-select">
+                        <div onclick="controlOptions('water', 'open')" class="form-select-header">
+                            <p id='select-header-water'>Select...</p>
+                            
+                            <img id="form-select-arrow-water" src="assets/icons/chev-down.png" alt="arrow" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <img src="assets/illustrations/dog.png" alt="dog" />
+
+                    <p>
+                        <span>3. </span>
+                        Do you have pets? Do they <span>chew</span> plants?
+                    </p>
+
+                    <div id="select-pets" class="form-select">
+                        <div onclick="controlOptions('pets', 'open')" class="form-select-header">
+                            <p id='select-header-pets'>Select...</p>
+                            
+                            <img id="form-select-arrow-pets" src="assets/icons/chev-down.png" alt="arrow" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="container products-container">
+
+                <div class="products-header">
+                    <img src="assets/illustrations/pick.png" alt="pick" />
+                    <h2>Our picks for you</h2>
+                </div>
+
+                <div class="products-scrollable-container">
+
+                    <template id='featured-product-template'>
+                        <div class="product-element product-element-full">
+                            <img class="product-cover product-featured-image" src="assets/plant photos/bunny-ears-cacti.png" alt="plant" />
+    
+                            <p class="product-name">Lucky bamboo f</p>
+    
+                            <div class="product-element-footer">
+                                <p class="product-price">$50</p>
+    
+                                <div class="product-element-footer-icons">
+                                    <img src="assets/icons/toxic.svg" alt="toxic" />
+                                    <img src="assets/icons/toxic.svg" alt="toxic" />
+                                    <img src="assets/icons/toxic.svg" alt="toxic" />
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+
+                    <template id='common-product-template'>
+                        <div class="product-element">
+                            <img class="product-cover product-image" src="assets/plant photos/bunny-ears-cacti.png" alt="plant" />
+
+                            <p class="product-name">Lucky bamboo c</p>
+
+                            <div class="product-element-footer">
+                                <p class="product-price">$50</p>
+
+                                <div class="product-element-footer-icons">
+                                    <img src="assets/icons/toxic.svg" alt="toxic" />
+                                    <img src="assets/icons/toxic.svg" alt="toxic" />
+                                    <img src="assets/icons/toxic.svg" alt="toxic" />
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+
+                    <div id="product-grid" class="grid grid-with-featured">
+                        <div id="featured-product" class="featured-product"></div>
+
+                        <div id="featured-product-half" class="featured-product-half"></div>
+
+                        <div id="list-quarter" class="list-quarter"></div>
+                    </div>
+
+                </div>
+
+            </div>  
+                    
+            <div class="footer-button">
+                <img src="assets/icons/arrow-up.svg" alt="arrow-up" />
+
+                <p>back to the top</p>
+            </div>
+        </div>
+
+        <script src="static/options.js"></script>
+    
+        <script src="js/products.js"></script>
+        <script src="js/options.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

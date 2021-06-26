@@ -1,0 +1,21 @@
+.header {
+    background: url("../assets/hero/desktop/left-leaves.png") left bottom no-repeat,
+                url("../assets/hero/desktop/right-leaves.png") right bottom no-repeat,
+                url("../assets/hero/desktop/plantperson.png") 72% 39% no-repeat;
+
+    background-size: contain, contain, 340px;
+    background-color: #75BC97 !important;
+}
+
+.header-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px 0;
+    color: white;
+}
+
+.header-container h1 {
+    font-size: 65px;
+    width: 400px;
+}

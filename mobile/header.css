@@ -1,0 +1,85 @@
+@media screen and (max-width: 1650px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    .header {
+        background: url("../assets/hero/desktop/left-leaves.png") left bottom no-repeat,
+                    url("../assets/hero/desktop/plantperson.png") 95% 39% no-repeat;
+    
+        background-size: contain, 340px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .header {
+        background: url("../assets/hero/desktop/left-leaves.png") -200px bottom no-repeat,
+                    url("../assets/hero/desktop/plantperson.png") 95% 39% no-repeat;
+    
+        background-size: contain, 340px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .header {
+        background: url("../assets/hero/desktop/left-leaves.png") left top no-repeat;
+    
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        background: url("../assets/hero/mobile/mobile-leaves.png") top no-repeat,
+                    url("../assets/hero/mobile/mobile-plantperson.png") bottom no-repeat;
+
+        background-position-y: -280px, 95%;    
+        background-size: cover, 340px;
+        min-height: 80vh;
+    }
+
+    .header-container h1 {
+        width: 100%;
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header {
+        background: url("../assets/hero/mobile/mobile-leaves.png") top no-repeat,
+                    url("../assets/hero/mobile/mobile-plantperson.png") bottom no-repeat;
+
+        background-position-y: -230px, 95%;    
+        background-size: cover, 90%;
+        min-height: 70vh;
+    }
+
+    .header-container h1 {
+        width: 100%;
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .header {
+        min-height: 60vh;
+    }
+
+    .header-container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-container h1 {
+        font-size: 30px;
+        margin: 40px 0;
+    }
+
+    .header-logo {
+        width: 90%;
+        margin: auto;
+    }
+}
